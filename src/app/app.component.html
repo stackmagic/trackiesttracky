@@ -1,0 +1,59 @@
+<mat-tab-group selectedIndex="1"
+               mat-stretch-tabs="false"
+               mat-align-tabs="center"
+               animationDuration="250ms">
+  <mat-tab label="All ({{base.length}})">
+    <app-list [base]="base"/>
+  </mat-tab>
+  <mat-tab label="Todo ({{countTodo}})">
+    <app-list [base]="base" [filter]="filterUnfinished" [sort]="sortTodo"/>
+  </mat-tab>
+  <mat-tab label="Favourites ({{countFav}})">
+    <app-list [base]="base" [filter]="filterFavourite"/>
+  </mat-tab>
+  <mat-tab label="Unfinished ({{countUnfin}})">
+    <app-list [base]="base" [filter]="filterUnfinished"/>
+  </mat-tab>
+  <mat-tab label="Finished ({{countFin}})">
+    <app-list [base]="base" [filter]="filterFinished"/>
+  </mat-tab>
+  <mat-tab label="Help">
+    <div class="help">
+      <h1>Filter</h1>
+      <p>At the top, there is an input field, this allows you to filter by track number or author.</p>
+
+      <h1>Maps</h1>
+      <p>Maps can be favourited or marked as finishe</p>
+
+      <h1>Tabs</h1>
+      <ul>
+        <li>All: just shows all maps</li>
+        <li>Todo: Shows all unfinished, favourites first</li>
+        <li>Favourites: Shows only favourites</li>
+        <li>Unfinished: Shows only unfinished</li>
+        <li>Finished: Shows only finished</li>
+      </ul>
+
+      <h1>Your Data</h1>
+      <p>All user-entered data is stored in localStorage of your browser and won't leave your computer</p>
+      <p>If you want to move your data to another system, Press F12, go to the Application tab and select
+        "localStorage". Copy the data and insert it the same way on the other system.</p>
+      <p>
+        <button (click)="deleteClicked()" mat-flat-button class="warning">Delete your data</button>
+      </p>
+
+      <hr/>
+
+      <h1>Ideas / Todos</h1>
+      <ul>
+        <li>sync with the kackyreloaded website somehow?</li>
+      </ul>
+
+      <h1>Code</h1>
+      <ul>
+        <li><a href="https://github.com/stackmagic/trackiesttracky">https://github.com/stackmagic/trackiesttracky</a>
+        </li>
+      </ul>
+    </div>
+  </mat-tab>
+</mat-tab-group>

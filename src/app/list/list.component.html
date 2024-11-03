@@ -1,0 +1,6 @@
+@for (baseMapData of filteredBaseList; track baseMapData.id) {
+  <app-image [data]="baseMapData"/>
+} @empty {
+  <div></div>
+  <h1 class="nothing">Nothing here</h1>
+}

@@ -1,0 +1,13 @@
+<img [src]="data.img">
+
+<div class="data">
+
+    <div class="number">{{ data.id }}</div>
+
+    <div class="checkboxes">
+        <mat-checkbox [(ngModel)]="data.userData.favourite" (ngModelChange)="saveData()">Fav</mat-checkbox>
+        <mat-checkbox [(ngModel)]="data.userData.finished" (ngModelChange)="saveData()">Fin</mat-checkbox>
+        <input matInput [(ngModel)]="data.userData.notes" (ngModelChange)="saveData()" placeholder="Notes...">
+    </div>
+
+</div>
