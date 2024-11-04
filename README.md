@@ -9,5 +9,6 @@ https://stackmagic.github.io/trackiesttracky
 
 * https://kackyreloaded.com/
 * https://kacky.gg/
+* https://kacky.socr.am/
 
 
