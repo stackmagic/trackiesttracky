@@ -4,6 +4,18 @@
 
     <div class="number">{{ data.id }}</div>
 
+    <div class="links">
+        <a class="outlink" target="_blank" href="https://kackyreloaded.com/event/editions/maps.php?uid={{ data.uid }}">
+            ranking
+            <mat-icon>open_in_new</mat-icon>
+        </a>
+
+        <a class="outlink" target="_blank" href="https://kacky.socr.am/dashboard/map/{{ data.id }}">
+            clips
+            <mat-icon>open_in_new</mat-icon>
+        </a>
+    </div>
+
     <div class="checkboxes">
         <mat-checkbox [(ngModel)]="data.userData.favourite" (ngModelChange)="saveData()">Fav</mat-checkbox>
         <mat-checkbox [(ngModel)]="data.userData.finished" (ngModelChange)="saveData()">Fin</mat-checkbox>

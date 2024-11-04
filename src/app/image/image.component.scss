@@ -15,7 +15,7 @@
     transition: transform 0.3s ease;
 
     :hover {
-      transform: scale(1.1);
+      transform: scale(1.25);
     }
   }
 
@@ -45,6 +45,27 @@
       color: gold;
       text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
       font-weight: bold;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding-top: 1rem;
+      padding-right: 1rem;
+
+      .outlink {
+        display: flex;
+
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        color: gold;
+        text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+        font-weight: bold;
+        text-decoration: none;
+      }
     }
 
     .checkboxes {

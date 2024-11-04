@@ -1,7 +1,7 @@
 export interface BaseMapData {
   id: number;
+  uid: string;
   img: string;
-  solutions: string[];
   userData: UserMapData;
 }
 

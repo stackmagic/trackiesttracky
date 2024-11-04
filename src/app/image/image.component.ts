@@ -3,13 +3,15 @@ import {BaseMapData} from "../app.model";
 import {MatCheckbox} from "@angular/material/checkbox";
 import {FormsModule} from "@angular/forms";
 import {PersistenceService} from "../persistence.service";
+import {MatIcon} from "@angular/material/icon";
 
 @Component({
   selector: 'app-image',
   standalone: true,
   imports: [
     MatCheckbox,
-    FormsModule
+    FormsModule,
+    MatIcon
   ],
   templateUrl: 'image.component.html',
   styleUrl: 'image.component.scss'
